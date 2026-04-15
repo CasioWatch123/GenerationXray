@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.generationxray.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+      "ores.OreFeatureMixin",
+      "ores.EmeraldOreFeatureMixin",
+      "ores.ScatteredOreFeatureMixin",
+      "ores.OreVeinMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
