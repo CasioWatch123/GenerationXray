@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "generation-xray",
+	"version": "${version}",
+	"name": "Generation Xray",
+	"description": "xray based virtual chunk generation using a seed",
+	"authors": [
+		"CasioWatch123"
+	],
+	"contact": {
+		"homepage": "https://github.com/CasioWatch123/",
+		"sources": "https://github.com/CasioWatch123/GenerationXray"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/generation-xray/icon.png",
+	"environment": "*",
+	"entrypoints": {
+        "modmenu": [
+          "com.generationxray.config.ModMenuEntrypoint"
+        ],
+		"main": [
+		],
+		"client": [
+			"com.generationxray.GenerationXrayClient"
+		]
+	},
+	"mixins": [
+		"generation-xray.mixins.json",
+		{
+			"config": "generation-xray.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+        "vchunklib": "=1.0.0+1.21.11",
+        "modmenu": ">=17.0.0", 
+        "cloth-config": "=21.11.153"
+	}
+}
